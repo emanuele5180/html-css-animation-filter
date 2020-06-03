@@ -60,29 +60,56 @@
 
 /* es7 */
 .ex-7-img {
-  transition:grayscale(0) 5s, blur(0) 5s;
+  transition: 5s;
 }
 .ex-7-img:hover {
-  filter: grayscale(100%) blur(10px);
+  filter: grayscale(100%) blur(5px);
 }
 
 /* es8 */
 .ex-8-img {
-  transition: border-radius grayscale(0) 5s, opacity() 5s;
+  transition: 5s;
 }
 .ex-8-img:hover {
-  border-radius: 15px;
-  filter: grayscale(1) opacity(0.2);
+  border-radius: 20px;
+  filter: grayscale(100%), opacity(0.2);
 }
 
 /* es9 */
 .ex-9-img {
   margin: 50px 100px;
   width: 400px;
-  transition: grayscale() hue-rotate() width 5s;
+  transition: width 5s;
 }
 .ex-9-img:hover {
   border-radius: 20px;
   width: 500px;
-  filter: grayscale(100%) hue-rotate(90deg);
+  filter: grayscale(100%) blur(5px);
+}
+
+/* es10 */
+.ex-10-icon{
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes circle {
+  0% {transform: rotate(360deg);}
+}
+
+/* es11 */
+.ex-11-icon:hover {
+  animation-name: circlestopped;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circlestopped {
+  0% {transform: rotate(0);}
+  50% {transform: rotate(180deg);}
+  85% {transform: rotate(270deg);}
+  100% {transform: rotate(0);}
+
 }

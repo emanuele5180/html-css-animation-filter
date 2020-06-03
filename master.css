@@ -10,8 +10,6 @@
 /* es2 */
 .ex-2-square {
   width: 100px;
-  height: 100px;
-  background: red;
   transition: width 4s;
 }
 .ex-2-square:active {
@@ -20,9 +18,6 @@
 
 /* es3 */
 .ex-3-square {
-  width: 100px;
-  height: 100px;
-  background: red;
   transition: border-radius 4s;
 }
 .ex-3-square:hover{
@@ -31,8 +26,6 @@
 
 /* es4 */
 .ex-4-square {
-  width: 100px;
-  height: 100px;
   background: red;
   transition: background 5s ;
 }
@@ -42,21 +35,54 @@
 
 /* es5 */
 .ex-5-square {
-  margin: 20px;
   width: 60px;
   height: 60px;
   background: red;
-  transition: width height 3s
+  transition: width 3s, height 3s;
 }
 .ex-5-square:hover {
-  margin: 20px;
   width: 80px;
   height: 80px;
 
 }
 .ex-5-square:active {
-  margin: 20px;
   width: 30px;
   height: 30px;
+}
 
+/* es6 */
+.ex-6-img {
+  width: 500px;
+}
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+/* es7 */
+.ex-7-img {
+  transition:grayscale(0) 5s, blur(0) 5s;
+}
+.ex-7-img:hover {
+  filter: grayscale(100%) blur(10px);
+}
+
+/* es8 */
+.ex-8-img {
+  transition: border-radius grayscale(0) 5s, opacity() 5s;
+}
+.ex-8-img:hover {
+  border-radius: 15px;
+  filter: grayscale(1) opacity(0.2);
+}
+
+/* es9 */
+.ex-9-img {
+  margin: 50px 100px;
+  width: 400px;
+  transition: grayscale() hue-rotate() width 5s;
+}
+.ex-9-img:hover {
+  border-radius: 20px;
+  width: 500px;
+  filter: grayscale(100%) hue-rotate(90deg);
 }
